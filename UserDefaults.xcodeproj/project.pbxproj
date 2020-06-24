@@ -13,6 +13,7 @@
 		9193A84024A3E25500DF77E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9193A83E24A3E25500DF77E3 /* Main.storyboard */; };
 		9193A84224A3E25700DF77E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9193A84124A3E25700DF77E3 /* Assets.xcassets */; };
 		9193A84524A3E25700DF77E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9193A84324A3E25700DF77E3 /* LaunchScreen.storyboard */; };
+		9193A84D24A3E44700DF77E3 /* SettingsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9193A84C24A3E44700DF77E3 /* SettingsTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9193A84124A3E25700DF77E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9193A84424A3E25700DF77E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9193A84624A3E25700DF77E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9193A84C24A3E44700DF77E3 /* SettingsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		9193A83724A3E25500DF77E3 /* UserDefaults */ = {
 			isa = PBXGroup;
 			children = (
-				9193A83824A3E25500DF77E3 /* AppDelegate.swift */,
-				9193A83A24A3E25500DF77E3 /* SceneDelegate.swift */,
-				9193A83C24A3E25500DF77E3 /* ViewController.swift */,
+				9193A84E24A3E44F00DF77E3 /* VCs */,
 				9193A83E24A3E25500DF77E3 /* Main.storyboard */,
 				9193A84124A3E25700DF77E3 /* Assets.xcassets */,
+				9193A83A24A3E25500DF77E3 /* SceneDelegate.swift */,
+				9193A83824A3E25500DF77E3 /* AppDelegate.swift */,
 				9193A84324A3E25700DF77E3 /* LaunchScreen.storyboard */,
 				9193A84624A3E25700DF77E3 /* Info.plist */,
 			);
 			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		9193A84E24A3E44F00DF77E3 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				9193A83C24A3E25500DF77E3 /* ViewController.swift */,
+				9193A84C24A3E44700DF77E3 /* SettingsTVC.swift */,
+			);
+			path = VCs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				9193A83D24A3E25500DF77E3 /* ViewController.swift in Sources */,
 				9193A83924A3E25500DF77E3 /* AppDelegate.swift in Sources */,
+				9193A84D24A3E44700DF77E3 /* SettingsTVC.swift in Sources */,
 				9193A83B24A3E25500DF77E3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
