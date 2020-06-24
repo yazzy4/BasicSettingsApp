@@ -27,10 +27,16 @@ class SettingsTVC: UITableViewController {
     }
 
     @IBAction func sliderDidChangeValue(_ sender: UISlider) {
+        
+//        let wholeNumber = Int(sender.value)
+        coolMeterValueLabel.text = String(Int(sender.value))
     }
     
  
-    @IBAction func didSelectSave(_ sender: UIButton) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard indexPath.section == 2 else { return }
+        
+        print("save")
     }
     
 }
