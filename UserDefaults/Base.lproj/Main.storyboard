@@ -81,7 +81,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="56R-P1-s2G">
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="56R-P1-s2G">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
                                                     <color key="onTintColor" red="0.29479264350000001" green="1" blue="0.32434817259999998" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </switch>

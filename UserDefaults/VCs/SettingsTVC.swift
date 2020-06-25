@@ -34,7 +34,18 @@ class SettingsTVC: UITableViewController {
     
     func loadSettings(){
         
-        guard let settingsDictionary = UserDefaults.standard.dictionary(forKey: "settings") else { return }
+        guard let settingsDictionary = UserDefaults.standard.dictionary(forKey: "settings"),
+            let firstName = settingsDictionary["firstName"] as? String,
+            let lastName = settingsDictionary["lastName"] as? String,
+            let likesDevelopment = settingsDictionary["likesDevelopment"] as? Bool,
+            let coolMeterValue = settingsDictionary["coolMeterValue"] as? Int
+            else { return }
+        
+        firstNameTextField.text = firstName
+        lastNameTextField.text = lastName
+        likesDevelopmentSwitch.isOn = likesDevelopment
+        coolMeterValueLabel.text = String(coolMeterValue)
+        coolMeterSlider.value = Float(coolMeterValue)
 //        let firstName = UserDefaults.standard.string(forKey: "firstName")
 //        print(firstName ?? "no first name")
     }
@@ -52,12 +63,27 @@ class SettingsTVC: UITableViewController {
 //        UserDefaults.standard.set(firstNameTextField.text, forKey: "firstName")
     }
     
+    
+    func didSaveAlert(){
+        let alert = UIAlertController(title: "Saved settings", message: nil, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Dismiss", style: .cancel)
+        alert.addAction(action)
+        
+        present(alert, animated: true)
+        
+    }
+    
  
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard indexPath.section == 2 else { return }
        
         print("save")
         saveSettings()
+        
+        DispatchQueue.main.async {
+            self.didSaveAlert()
+        }
+        
     }
     
 }
